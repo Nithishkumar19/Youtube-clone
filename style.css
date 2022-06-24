@@ -496,3 +496,48 @@ body
 	position: relative;
 	top:450px
 }
+.filters
+{
+	position : absolute;
+	top : 80px;
+	left : 190px;
+	display : flex;
+	flex-direction: row;
+}
+.grid
+{
+	position : absolute;
+	top : 130px;
+	left : 200px;
+	display:grid;
+	grid-template-columns: 250px 250px 250px 250px;
+	grid-template-rows: 300px 300px 300px 300px;
+	row-gap: 30px;
+	column-gap: 30px;
+}
+.grid img
+{
+	width: 100%;
+	height: 100%;
+}
+.lib
+{
+	font-family: 'Material Icons';
+	font-weight: normal;
+ 	font-style: normal;
+	font-size: 24px;  
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: 'liga';
+	position: absolute;
+	top : 290px;
+	left : 22px;
+}
