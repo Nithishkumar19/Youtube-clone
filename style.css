@@ -541,3 +541,37 @@ body
 	top : 290px;
 	left : 22px;
 }
+@media(max-width:425px){
+  .search{
+    display:none;
+  }
+  .icons .materials-icons{
+    display:none;
+  }
+  .icons .dsiplay-this{
+    display: inline;
+  }
+  .navbar{
+    display: none;
+  }
+}
+@media(max-width:768px){
+  .search{
+    display:none;
+  }
+  .navbar{
+    display:none;
+  }
+  .show-navbar{
+    display: inline;
+    position: fixed;
+    top: 2rem;
+    height: auto;
+  }
+}
+@media(max-width: 928px)
+{
+  .search input{
+    width: 300px
+  }
+}
