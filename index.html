@@ -1,90 +1,155 @@
 <html>
-<head>
-	<title>YouTube</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    	  rel="stylesheet">
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,100,0,-25" />
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,100,0,-25" />
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	</head>
+    <head>
+        <title>YouTube</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6ee374ce85.js" crossorigin="anonymous"></script>
+    </head>
 <body>
-	<div class = "taskbar">
-		<div class = "menu">
-			<span class="ham">menu</span>
-			<img src = "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
-			</img>
-		</div>
-		<div class = "search">
-			<form>
-			<input type = "text" placeholder="Search">
-			</form>
-	`		<button><span class="material-icons">search</span></button>
-		</div>
-		<i><span class="mic">mic</span></i>
-		<div class = "icons">
-		<i><span class="video">video_call</span></i>
-		<i><span class="grid">grid_on</span></i>
-		<i><span class="noti">notifications</span></i>
-		<i><span class="acc">account_circle</span></i>
-		</div>
-	</div>
-	<div class="Navbar">
-		<div class="general">
-			<span class="home">home</span>
-			<span class="explore">explore</span>
-			<span class="shorts">play_circle</span>
-			<span class="subs">subscriptions</span>
-			<ul>
-				<span class="hm"><li><a href="">Home</a></li></span>
-				<span class="ex"><li><a href="">Explore</a></li></span>
-				<span class="srts"><li><a href="">Shorts</a></li></span>
-				<span class="sub"><li><a href="">Subscriptions</a></li></span>
-			</ul>
-		</div>
-		<hr>
-		<div class="account">
-			<span class="lib">library_music</span>
-			<span class="history">history</span>
-			<span class="yourvideos">play_arrow</span>
-			<span class="watchlater">schedule</span>
-			<span class="likedvideos">thumb_up</span>
-			<ul>
-				<span class="libr"><li><a href="">Library</a></li></span>
-				<span class="his"><li><a href="">History</a></li></span>
-				<span class="yv"><li><a href="">Your videos</a></li></span>
-				<span class="wl"><li><a href="">Watch later</a></li></span>
-				<span class="lv"><li><a href="">Liked videos</a></li></span>
-			</ul>
-			<hr>
-		</div>
-	</div>
-			<div class="filters"> 
-				<button class="filter-options active">all</button> 
-				<button class="filter-options">CSS</button> 
-				<button class="filter-options">web development</button> 
-				<button class="filter-options">python</button> 
-				<button class="filter-options">entertainment</button> 
-				<button class="filter-options">marvel</button> 
-				<button class="filter-options">javascript</button> 
-				<button class="filter-options">artificial intelligence</button> 
-				<button class="filter-options">machine learning</button> 
-				<button class="filter-options">trending</button> 
-	</div> 
-	<div class="videos">
-		<div class="grid">
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/1/13/Peaky_Blinders_Logo.png"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/a/a6/Frightening_Peaky_Blinder.jpg"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/6/67/Peaky_Blinders.jpg"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/7/75/Cillian_Murphy-2014.jpg"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/3/3b/Fan_of_La_casa_de_papel_1.jpg"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/e/ef/La_casa_de_papel_en_Halloween.jpg"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png"></div>
-			<div class="elements"><img src = "https://upload.wikimedia.org/wikipedia/commons/2/21/Cosplay_of_Squid_Game_Guards_at_Sutera_Cosplay_Fest_2021.jpg"></div>
-		</div>
-	</div>
+    <nav class="flex">
+        <div class="nav-left flex">
+            <i class="fa-solid fa-bars ham"></i>
+           <img src = "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+        </div>
+        <div class="nav-middle flex" >
+            <div class="searchbox flex">
+                <input type="search" placeholder="Search">
+               <span class="glass"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+           <span class="mic"><i class="fa-solid fa-microphone"></i></span>
+        </div>
+        <div class="nav-right flex">
+            <span class="video"><i class="fa-solid fa-video"></i></span>
+            <span class="grid"><i class="fa-solid fa-table-cells"></i></span>
+            <span class="bell"><i class="fa-solid fa-bell"></i></span>
+            <span class="profile"><i class="fa-solid fa-user"></i></span>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="general">
+            <a href = ""><i class="fa-solid fa-house"></i><p class="hm">Home</p></a>
+            <a href = ""><i class="fa-solid fa-compass"></i><p>Explore</p></a>
+            <a href = ""><i class="fa-solid fa-photo-film"></i><p>Shorts</p></a>
+            <a href = ""><i class="fa-solid fa-play"></i><p>Subscriptions</p></a>
+            <a href = ""><i class="fa-solid fa-book"></i><p>Library</p></a>
+            <span class="his"><a href = ""><i class="fa-solid fa-clock-rotate-left "></i><p>History</p></a></span>
+            <span class="yv"><a href = ""><i class="fa-solid fa-circle-play "></i><p>Your videos</p></a></span>
+            <span class="wl"><a href = ""><i class="fa-solid fa-clock "></i><p>Watch later</p></a></span>
+            <span class="lv"><a href = ""><i class="fa-solid fa-thumbs-up "></i><p>Liked videos</p></a></span>
+            <hr>
+            <div class="subscriptions">
+                <h5>SUBSCRIPTIONS</h5>
+            </div>
+            <div class="account">
+                <span class="his"><a href = ""><i class="fa-solid fa-clock-rotate-left "></i><p>History</p></a></span>
+                <span class="yv"><a href = ""><i class="fa-solid fa-circle-play "></i><p>Your videos</p></a></span>
+                <span class="wl"><a href = ""><i class="fa-solid fa-clock "></i><p>Watch later</p></a></span>
+                <span class="lv"><a href = ""><i class="fa-solid fa-thumbs-up "></i><p>Liked videos</p></a></span>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="videos">
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>Marvel India</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src = "script.js"></script>
 </body>
 </html>
