@@ -1,403 +1,166 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Tag Manager -->
+<html>
+    <head>
+      <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K5K5J5TJ');</script>
 <!-- End Google Tag Manager -->
-
-    <!-- Material Icons -->
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Youtube UI Clone</title>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
+        <title>YouTube</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6ee374ce85.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5K5J5TJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <!-- Header Starts -->
-    <div class="header">
-      <div class="header__left">
-        <i id="menu" class="material-icons ham">menu</i>
-        <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/003/206/623/small/youtube-editorial-app-icon-free-vector.jpg"
-          alt=""
-        />
-      </div>
-
-      <div class="header__search">
-        <form action="">
-          <input type="text" placeholder="Search" />
-          <button><i class="material-icons">search</i></button>
-        </form>
-      </div>
-
-      <div class="header__icons">
-        <i class="material-icons display-this">search</i>
-        <i class="material-icons">videocam</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">notifications</i>
-        <i class="material-icons display-this">account_circle</i>
-      </div>
+    <nav class="flex">
+        <div class="nav-left flex">
+            <i class="fa-solid fa-bars ham"></i>
+           <img src = "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+        </div>
+        <div class="nav-middle flex" >
+            <div class="searchbox flex">
+                <input type="search" placeholder="Search">
+               <span class="glass"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+           <span class="mic"><i class="fa-solid fa-microphone"></i></span>
+        </div>
+        <div class="nav-right flex">
+            <span class="video"><i class="fa-solid fa-video"></i></span>
+            <span class="grid"><i class="fa-solid fa-table-cells"></i></span>
+            <span class="bell"><i class="fa-solid fa-bell"></i></span>
+            <span class="profile"><i class="fa-solid fa-user"></i></span>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="general">
+            <a href = ""><i class="fa-solid fa-house"></i><p class="hm">Home</p></a>
+            <a href = ""><i class="fa-solid fa-compass"></i><p>Explore</p></a>
+            <a href = ""><i class="fa-solid fa-photo-film"></i><p>Shorts</p></a>
+            <a href = ""><i class="fa-solid fa-play"></i><p>Subscriptions</p></a>
+            <a href = ""><i class="fa-solid fa-book"></i><p>Library</p></a>
+            <span class="his"><a href = ""><i class="fa-solid fa-clock-rotate-left "></i><p>History</p></a></span>
+            <span class="yv"><a href = ""><i class="fa-solid fa-circle-play "></i><p>Your videos</p></a></span>
+            <span class="wl"><a href = ""><i class="fa-solid fa-clock "></i><p>Watch later</p></a></span>
+            <span class="lv"><a href = ""><i class="fa-solid fa-thumbs-up "></i><p>Liked videos</p></a></span>
+            <hr>
+            <div class="subscriptions">
+                <h5>SUBSCRIPTIONS</h5>
+            </div>
+            <div class="account">
+                <span class="his"><a href = ""><i class="fa-solid fa-clock-rotate-left "></i><p>History</p></a></span>
+                <span class="yv"><a href = ""><i class="fa-solid fa-circle-play "></i><p>Your videos</p></a></span>
+                <span class="wl"><a href = ""><i class="fa-solid fa-clock "></i><p>Watch later</p></a></span>
+                <span class="lv"><a href = ""><i class="fa-solid fa-thumbs-up "></i><p>Liked videos</p></a></span>
+            </div>
+        </div>
     </div>
-    <!-- Header Ends -->
-
-    <!-- Main Body Starts -->
-    <div class="mainBody">
-      <!-- Sidebar Starts -->
-
-      <div class="sidebar">
-        <div class="sidebar__categories">
-          <div class="sidebar__category">
-            <i class="material-icons">home</i>
-            <span>Home</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">local_fire_department</i>
-            <span>Trending</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">subscriptions</i>
-            <span>Subcriptions</span>
-          </div>
-        </div>
-        <hr />
-        <div class="sidebar__categories">
-          <div class="sidebar__category">
-            <i class="material-icons">library_add_check</i>
-            <span>Library</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">history</i>
-            <span>History</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">play_arrow</i>
-            <span>Your Videos</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">watch_later</i>
-            <span>Watch Later</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">thumb_up</i>
-            <span>Liked Videos</span>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <!-- Sidebar Ends -->
-
-      <!-- Videos Section -->
-      <div class="videos">
-        <h1>Recommended</h1>
-
-        <div class="videos__container">
-          <!-- Single Video starts -->
-          <div class="video">
-            <div class="video__thumbnail">
-              <a href="https://www.youtube.com/watch?v=-NgBGbKp2ns"><img src="https://i.ytimg.com/vi/VdQOzyhFHQs/maxresdefault.jpg" class="thumbnail"></a>
-            </div>
-            <div class="video__details">
-              <div class="author">
-                <a href=""><img src="https://yt3.ggpht.com/D1Md6OFx3DWf-nGNRS4nqxG_-9Lq0XjJOEg0MRY6_-5sWAaFASlSrCULydI4XcSSYOieMm-wbg=s176-c-k-c0x00ffffff-no-rj"></a>
-              </div>
-              <div class="title">
-                <a href="https://www.youtube.com/watch?v=-NgBGbKp2ns"><h3>Ilayaraja vibes❤️</h3></a>
-                        <a href="https://www.youtube.com/channel/UCVXV99Bfyjq2FEFQFXvAB6Q">Eshwar Efx</a>
-                        <span>10M Views &bull; 2 days ago</span>
-              </div>
-            </div>
-          </div>
-          <!-- Single Video Ends -->
-
-            <!-- Single Video starts -->
-            <div class="video">
-              <div class="video__thumbnail">
-                <a href="https://www.youtube.com/watch?v=1CViJDo_YGk"><img src="https://i.ytimg.com/vi/1CViJDo_YGk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2UDiPnsWo1tw_CCDzsS55-ed2ww" class="thumbnail"></a>
-              </div>
-              <div class="video__details">
-                <div class="author">
-                  <a href=""><img src="https://yt3.ggpht.com/NCOGqLU2HYzhqb9QKT2CyI5z6yv1vwkHJhyc_R5_2kOaUOtdHdZBNPpi4kJLDyIHHjSS5qaN=s88-c-k-c0x00ffffff-no-rj"></a>
+    <div class="contents">
+        <div class="videos">
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
                 </div>
-                <div class="title">
-                  <a href="https://www.youtube.com/watch?v=1CViJDo_YGk"><h3>YUVAN Mashup 2K18 | Stanley & Sathya | Straight From Our Hearts</h3></a>
-                          <a href="https://www.youtube.com/c/SingleByTwo">Single by Two</a>
-                          <span>29M Views &bull; 2 years ago</span>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          <!-- Single Video Ends -->
-
-            <!-- Single Video starts -->
-            <div class="video">
-              <div class="video__thumbnail">
-                <a href="https://www.youtube.com/watch?v=Y9PTgobdwmU"><img src="https://i.ytimg.com/vi/Y9PTgobdwmU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD15mDfzJaUsujQV23JWJ-LT0RUfw" class="thumbnail"></a>
-              </div>
-              <div class="video__details">
-                <div class="author">
-                  <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkjLizvUWbRjF3aYbID-8ZDgypEWSBq8im0Q&usqp=CAU"></a>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views 2 days ago</p>
+                    </div>
                 </div>
-                <div class="title">
-                  <a href="https://www.youtube.com/watch?v=Y9PTgobdwmU"><h3>💗Ennulle Ennulle 😇song 🥂bgm (efx) 😌 whatsapp🌈 status</h3></a>
-                          <a href="">D EDITZ</a>
-                          <span>5M Views &bull; 5 days ago</span>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views 2 days ago</p>
+                    </div>
                 </div>
-              </div>
             </div>
-
-          <!-- Single Video starts -->
-          <div class="video">
-            <div class="video__thumbnail">
-              <a href="https://www.youtube.com/watch?v=95YO3eoTUAI"><img src="https://i.ytimg.com/an_webp/95YO3eoTUAI/mqdefault_6s.webp?du=3000&sqp=CPDJ6pkG&rs=AOn4CLDS6DP2ko5UPl6DRXiGc6ULZ5vSMA" class="thumbnail"></a>
-            </div>
-            <div class="video__details">
-              <div class="author">
-                <a href=""><img src="https://yt3.ggpht.com/5rD82BXJlxTOCmGYKgf1NSjV4N4l-voIRm2UIP_ScTf1xmjGe-lQSUdFI-M2JZx4C39Oxz9zVP8=s88-c-k-c0x00ffffff-no-rj"></a>
-              </div>
-              <div class="title">
-                <a href="https://www.youtube.com/watch?v=95YO3eoTUAI"><h3>Tommy Shelby | Roses</h3></a>
-                        <a href="https://www.youtube.com/channel/UC0RF6I0k-qqyG8gZFUr3AKg">6AX CINEMATIC</a>
-                        <span>100M Views &bull; 10 days ago</span>
-              </div>
-            </div>
-          </div>
-        <!-- Single Video Ends -->
-
-          <!-- Single Video starts -->
-          <div class="video">
-            <div class="video__thumbnail">
-              <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
-            </div>
-            <div class="video__details">
-              <div class="author">
-                <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
-              </div>
-              <div class="title">
-                <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                        <a href="">Vibe pannu</a>
-                        <span>10M Views &bull; 2 days ago</span>
-              </div>
-            </div>
-          </div>
-        <!-- Single Video Ends -->
-        
-        <!-- Single Video starts -->
-            <div class="video">
-              <div class="video__thumbnail">
-                <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
-              </div>
-              <div class="video__details">
-                <div class="author">
-                  <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
                 </div>
-                <div class="title">
-                  <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                          <a href="">Vibe pannu</a>
-                          <span>10M Views &bull; 2 days ago</span>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>Marvel India</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          <!-- Single Video Ends -->
-
-          <!-- Single Video starts -->
-          <div class="video">
-            <div class="video__thumbnail">
-              <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
             </div>
-            <div class="video__details">
-              <div class="author">
-                <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
-              </div>
-              <div class="title">
-                <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                        <a href="">Vibe pannu</a>
-                        <span>10M Views &bull; 2 days ago</span>
-              </div>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        <!-- Single Video Ends -->
-
-
-        <!-- Single Video starts -->
-        <div class="video">
-          <div class="video__thumbnail">
-            <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
-          </div>
-          <div class="video__details">
-            <div class="author">
-              <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
+            <div class="vid-list">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Peaky_Blinder.jpg" class="thumbnail"></a>
+                <div class="flex">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg"></a>
+                    <div class="vid-info">
+                        <a href=""><p>Peaky blinders season 6 trailer</p></a>
+                        <p>NETFLIX</p>
+                        <p>100M Views &bull; 2 days ago</p>
+                    </div>
+                </div>
             </div>
-            <div class="title">
-              <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                      <a href="">Vibe pannu</a>
-                      <span>10M Views &bull; 2 days ago</span>
-            </div>
-          </div>
         </div>
-      <!-- Single Video Ends -->
-
-
-      <!-- Single Video starts -->
-      <div class="video">
-        <div class="video__thumbnail">
-          <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
-        </div>
-        <div class="video__details">
-          <div class="author">
-            <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
-          </div>
-          <div class="title">
-            <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                    <a href="">Vibe pannu</a>
-                    <span>10M Views &bull; 2 days ago</span>
-          </div>
-        </div>
-      </div>
-    <!-- Single Video Ends -->
-
-
-    <!-- Single Video starts -->
-    <div class="video">
-      <div class="video__thumbnail">
-        <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
-      </div>
-      <div class="video__details">
-        <div class="author">
-          <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
-        </div>
-        <div class="title">
-          <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                  <a href="">Vibe pannu</a>
-                  <span>10M Views &bull; 2 days ago</span>
-        </div>
-      </div>
     </div>
-  <!-- Single Video Ends -->
-
-
-  <!-- Single Video starts -->
-  <div class="video">
-    <div class="video__thumbnail">
-      <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><img src="https://i.ytimg.com/an_webp/qovXL6tExlo/mqdefault_6s.webp?du=3000&sqp=CPbC6pkG&rs=AOn4CLBSEArTVbfW40Izc2yQwyVQt6pUmQ" class="thumbnail"></a>
-    </div>
-    <div class="video__details">
-      <div class="author">
-        <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
-      </div>
-      <div class="title">
-        <a href="https://www.youtube.com/watch?v=qovXL6tExlo"><h3>Otis & Maeve 💖 ~ Night Changes</h3></a>
-                <a href="">Vibe pannu</a>
-                <span>10M Views &bull; 2 days ago</span>
-      </div>
-    </div>
-  </div>
-<!-- Single Video Ends -->
-
-<!-- Single Video starts -->
-<div class="video">
-  <div class="video__thumbnail">
-    <a href="playvideo.html"><img src="https://i.ytimg.com/vi/VdQOzyhFHQs/maxresdefault.jpg" class="thumbnail"></a>
-  </div>
-  <div class="video__details">
-    <div class="author">
-      <a href=""><img src="https://i.ytimg.com/vi/hUNSbPc4F9o/hqdefault.jpg"></a>
-    </div>
-    <div class="title">
-      <a href="playvideo.html"><h3>Ilayaraja vibes❤️</h3></a>
-              <a href="">Vibe pannu</a>
-              <span>10M Views &bull; 2 days ago</span>
-    </div>
-  </div>
-</div>
-<!-- Single Video Ends -->
-
-<!-- Single Video starts -->
-<div class="video">
-  <div class="video__thumbnail">
-    <a href="playvideo.html"><img src="https://i.ytimg.com/vi/VdQOzyhFHQs/maxresdefault.jpg" class="thumbnail"></a>
-  </div>
-  <div class="video__details">
-    <div class="author">
-      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe4fLSeEwyyCj2YDuKoiXroHLEOjAtNNXZMpz1acPS&s"></a>
-    </div>
-    <div class="title">
-      <a href="playvideo.html"><h3>Ilayaraja vibes❤️</h3></a>
-              <a href="">Vibe pannu</a>
-              <span>10M Views &bull; 2 days ago</span>
-    </div>
-  </div>
-</div>
-<!-- Single Video Ends -->
-
-<!-- Single Video starts -->
-<div class="video">
-  <div class="video__thumbnail">
-    <a href="playvideo.html"><img src="https://i.ytimg.com/vi/VdQOzyhFHQs/maxresdefault.jpg" class="thumbnail"></a>
-  </div>
-  <div class="video__details">
-    <div class="author">
-      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe4fLSeEwyyCj2YDuKoiXroHLEOjAtNNXZMpz1acPS&s"></a>
-    </div>
-    <div class="title">
-      <a href="playvideo.html"><h3>Ilayaraja vibes❤️</h3></a>
-              <a href="">Vibe pannu</a>
-              <span>10M Views &bull; 2 days ago</span>
-    </div>
-  </div>
-</div>
-<!-- Single Video Ends -->
-
-<!-- Single Video starts -->
-<div class="video">
-  <div class="video__thumbnail">
-    <a href="playvideo.html"><img src="https://i.ytimg.com/vi/VdQOzyhFHQs/maxresdefault.jpg" class="thumbnail"></a>
-  </div>
-  <div class="video__details">
-    <div class="author">
-      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe4fLSeEwyyCj2YDuKoiXroHLEOjAtNNXZMpz1acPS&s"></a>
-    </div>
-    <div class="title">
-      <a href="playvideo.html"><h3>Ilayaraja vibes❤️</h3></a>
-              <a href="">Vibe pannu</a>
-              <span>10M Views &bull; 2 days ago</span>
-    </div>
-  </div>
-</div>
-<!-- Single Video Ends -->
-
-<!-- Single Video starts -->
-<div class="video">
-  <div class="video__thumbnail">
-    <a href="playvideo.html"><img src="https://i.ytimg.com/vi/VdQOzyhFHQs/maxresdefault.jpg" class="thumbnail"></a>
-  </div>
-  <div class="video__details">
-    <div class="author">
-      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe4fLSeEwyyCj2YDuKoiXroHLEOjAtNNXZMpz1acPS&s"></a>
-    </div>
-    <div class="title">
-      <a href="playvideo.html"><h3>Ilayaraja vibes❤️</h3></a>
-              <a href="">Vibe pannu</a>
-              <span>10M Views &bull; 2 days ago</span>
-    </div>
-  </div>
-</div>
-<!-- Single Video Ends -->
-
-
-
-
-      </div>
-    </div>
-    <script src="index.js"></script>
-    <!-- Main Body Ends -->
-  </body>
+<script src = "script.js"></script>
+</body>
 </html>
